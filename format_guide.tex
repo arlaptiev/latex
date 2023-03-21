@@ -1,0 +1,88 @@
+\documentclass{61210}
+
+\author{Artem Laptiev}
+\problemset{1}
+
+
+\begin{document}
+
+
+
+\problem{1}{Ari Stotle, and \url{en.wikipedia.org/wiki/Mathematics}}
+
+\section{Formatting examples for figures, pseudocode, etc}
+
+\subsection{Tables}
+
+Many other table packages and options exist but here is one example:\\\\
+
+\begin{tabularx}{0.8\textwidth} {
+  | >{\raggedright\arraybackslash}X
+  | >{\centering\arraybackslash}X
+  | >{\raggedleft\arraybackslash}X | }
+ \hline
+ item 11 & item 12 & item 13 \\
+ \hline
+ item 21  & item 22  & item 23  \\
+\hline
+\end{tabularx}
+
+\subsection{Images}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.65\textwidth]{placeholder} % Include the image placeholder.png
+\caption{Figure caption.}
+\end{center}
+\end{figure}
+
+\subsection{Code Blocks and Algorithm Pseudocode}
+
+% Including Python code blocks:
+
+\begin{lstlisting}
+json
+{
+  "6.141": "normal",
+  "16.405": "woke",
+  "no_sleep": "spoke"
+}
+
+def do_something_productive():
+  if not_productive:
+    do_work()
+  else:
+    cry()
+\end{lstlisting}
+
+% Using the algorithm2e package for pseudocode:
+
+\begin{algorithm}[H]
+\SetAlgoLined
+ \While{alive}{
+  \eIf{sleepy}{
+   sleep\;
+   }{
+   eat\;
+  }
+ }
+ \caption{caption}
+\end{algorithm}
+
+% Using the algorithmic package for pseudocode:
+
+\begin{algorithmic}
+\STATE $i\gets 10$
+\IF {$i\geq 5$}
+        \STATE $i\gets i-1$
+\ELSE
+        \IF {$i\leq 3$}
+                \STATE $i\gets i+2$
+        \ENDIF
+\ENDIF
+\end{algorithmic}
+
+
+
+\end{document}
+

@@ -25,8 +25,15 @@
 \usepackage{clrscode4e}
 \usepackage{xspace} % xspace takes care of the \@ after a capitalized word before a period.
 \usepackage{multicol}
-\usepackage{graphicx}
+\usepackage{graphicx} % Required for the inclusion of images
 \usepackage{fancyhdr}
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{tabularx} % Tables
+\usepackage{natbib} % Required to change bibliography style to APA
+
+% Many options for pseudocode
+\usepackage{algorithm2e}
+\usepackage{algorithmic}
 
 \setlength{\oddsidemargin}{0pt}
 \setlength{\evensidemargin}{0pt}
@@ -161,8 +168,8 @@
 \newcommand{\card}[1]       {\left| #1\right|}
 \newcommand{\floor}[1]      {\left\lfloor #1 \right\rfloor}
 \newcommand{\ceil}[1]       {\left\lceil #1 \right\rceil}
-\newcommand{\ang}[1]        {\ifmmode{\left\langle #1 \right\rangle}
-                 \else{$\left\langle${#1}$\right\rangle$\xspace}\fi}
+% \newcommand{\ang}[1]        {\ifmmode{\left\langle #1 \right\rangle}
+%                 \else{$\left\langle${#1}$\right\rangle$\xspace}\fi}
                         % the \if allows use outside mathmode,
                     % but may swallow following space there!
 \newcommand{\sbrace}[1]{\left[#1\right]}
