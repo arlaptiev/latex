@@ -11,3 +11,6 @@ In VS Code, go to "Preferences: Configure Language Specific Settings". Turn on "
 
 ### Errors
 Turn off compile error messages in LaTeX Workshop, they are too frequent and annoying.
+
+### Grammarly
+I also use Grammarly extension (add filetype **/*.tex in settings).
